@@ -87,6 +87,7 @@ header
   margin-top: -7px;
   transition: transform 0.5s;
   animation: spin 3s infinite linear
+  cursor: pointer;
 }
 
 .logo:hover .logo-img
