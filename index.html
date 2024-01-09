@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="utf-8">
+  <content charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Byte | Discord</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!--favicon-->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <!--favicon.ends-->
+</head>
+<body>
+   <div id="preloader" class="preloader">
+     <h3>Byting...</h3><br>
+     <div class="loading-container">
+       <div class="loading-bar" id="load"></div>
+     </div>
+   </div>
+
+
+
+   <section class="banner" id="sec">
+    <header>
+      <div class="logo" href="/index.html">
+        <img class="logo-img" href="/index.html" src="logo.png">
+        <a href="/index.html" class="logo-txt">BYTE</a>
+      </div>
+        
+      <button class="gb">Get Byte</button>
+
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+
+      <div id="toggle" 
+        onclick="toogle()">
+      </div>
+
+    </header>
+
+
+
+
+    <div class="content1">
+
+      <div class="content-text">
+        <p class="trial">Explore a 69 day free trial!</p>
+        <h1 class="byte-text"><span class="byte">Byte</span><br>The best bot for your Discord server!</h1>
+
+        <div class="butts">
+          <button class="gs">GET STARTED</button>
+          <button class="vp">VIEW PLANS</button>
+        </div>
+
+        <div class="users">
+          <h2>6.9 million +</h2>
+          <p>Used by over 6.9 million servers!</p>
+        </div>
+      </div>
+
+      <div class="content-img">
+        <img class="byte-img" src="byte.png" alt="Byte">
+      </div>
+
+    </div>
+
+    <div class="line1"></div>
+
+
+  </section>
+
+  <div id="navigation">
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/byte.html">/commands</a></li>
+      <li><a href="#">Terms Of Service</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </div>
+
+  <script type="text/javascript">
+    function toogle(){
+      var sec = document.getElementById('sec');
+      var nav = document.getElementById('navigation');
+      sec.classList.toggle('active');
+      nav.classList.toggle('active');
+
+    }
+
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+  </script>
+
+  <script>
+
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function()
+    {
+      loader.style.display = "none";
+    })
+
+  </script>
+
+
+
+
+</body>
+
+</html>
