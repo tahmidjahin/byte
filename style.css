@@ -87,7 +87,7 @@ header
   background: none;
   margin-top: -7px;
   transition: transform 0.5s;
-  animation: spin 3s infinite linear;
+  animation: spin 4.5s infinite linear;
   cursor: pointer;
 }
 
