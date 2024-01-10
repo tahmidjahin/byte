@@ -156,6 +156,24 @@ header .gb
   color: #c9c9c9;
 }
 
+.dc-logo
+{ 
+  margin-left: 19.5%;
+  margin-top: -17px;
+  height: 38px;
+  filter: invert(1);
+  position: absolute;
+  background: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dc-logo:hover
+{
+  animation: spin 0.2s linear;
+  transition: 0.3s;
+}
+
 @media(max-width:600px)
 {
   header .gb
