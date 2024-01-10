@@ -156,7 +156,7 @@ header .gb
   color: #c9c9c9;
 }
 
-.dc-logo
+header .dc-logo
 { 
   margin-left: 19.5%;
   margin-top: -17px;
@@ -168,7 +168,7 @@ header .gb
   transition: 0.3s;
 }
 
-.dc-logo:hover
+header .dc-logo:hover
 {
   animation: spin 0.2s linear;
   transition: 0.3s;
