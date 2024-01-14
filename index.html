@@ -38,7 +38,6 @@
 
     </header>
 
-
     <div class="content1">
 
       <div class="content-text">
@@ -64,7 +63,6 @@
 
     <div class="line1"></div>
 
-
   </section>
 
   <div id="navigation">
@@ -78,6 +76,7 @@
   </div>
 
   <script type="text/javascript">
+    
     function toogle(){
       var sec = document.getElementById('sec');
       var nav = document.getElementById('navigation');
@@ -86,7 +85,6 @@
 
     }
 
-    // When the user scrolls the page, execute myFunction
     window.onscroll = function() {myFunction()};
 
     function myFunction() {
@@ -95,21 +93,25 @@
       var scrolled = (winScroll / height) * 100;
       document.getElementById("myBar").style.width = scrolled + "%";
     }
+
+    var loader1 = document.getElementById("preloader");
+    window.addEventListener("load", function() {
+      setTimeout(function() {
+        loader1.style.display = "none";
+      }, 5000);
+    });
+
+    var loader2 = document.getElementById("load");
+    var width = 0;
+    var interval = setInterval(function() {
+      if (width >= 100) {
+        clearInterval(interval);
+      } else {
+        width++;
+        loader2.style.width = width + "%";
+      }
+    }, 50);
+    
   </script>
-
-  <script>
-
-    var loader = document.getElementById("preloader");
-    window.addEventListener("load", function()
-    {
-      loader.style.display = "none";
-    })
-
-  </script>
-
-
-
-
 </body>
-
 </html>
